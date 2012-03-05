@@ -1,5 +1,5 @@
 $full-width: 710px;
-$background-color: #cff;
+$background-color: #336666;
 $link-color: #09c;
 $visited-link-color: #069;
 
@@ -15,7 +15,7 @@ header {
   padding-top: 20px;
 
   img {
-    padding: 1em;
+    padding: .5em;
     background: white;
   }
 }
@@ -90,6 +90,21 @@ a.signup_button {
   width: 190px;
   color: white;
   background: #006400;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Apartment Sign up button */
+
+a.apartment_signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: black;
+  background: #FFCC00;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;

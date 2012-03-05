@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "apartments/new"
+
   resources :users do
     member do
       get :following, :followers
@@ -12,6 +14,7 @@ SampleApp::Application.routes.draw do
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
 
+  match '/apartment_signup',  to: 'apartments#new'
 
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'

@@ -11,7 +11,7 @@ module ApplicationHelper
   end
 
   def logo
-    image_tag("logo.png", alt: "Sample App", class: "round")
+    image_tag("RW_logo.png", alt: "Rent Weird Realty", class: "round", width: "125px" )
   end
 end
 

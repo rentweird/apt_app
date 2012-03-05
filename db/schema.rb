@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120301223346) do
+ActiveRecord::Schema.define(:version => 20120305194735) do
+
+  create_table "apartments", :force => true do |t|
+    t.string   "apartment_name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip_code"
+    t.string   "phone_number"
+    t.string   "area"
+    t.string   "ad_title"
+    t.string   "description"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "apartments", ["address"], :name => "index_apartments_on_address", :unique => true
+  add_index "apartments", ["apartment_name"], :name => "index_apartments_on_apartment_name", :unique => true
 
   create_table "microposts", :force => true do |t|
     t.string   "content"
