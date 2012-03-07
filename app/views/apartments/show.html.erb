@@ -1,0 +1,32 @@
+<% provide :title, @apartment.area%>
+<table class="profile">
+  <tr>
+    <td class="main">
+      <h1>
+
+		<%= @apartment.apartment_name %>
+      </h1>
+      <h3>
+      <%= @apartment.ad_title %>
+      </h3>
+    </td>
+    <td class="sidebar round">
+      <strong>Name</strong> <%= @apartment.apartment_name %><br />
+      <strong>Address</strong> <%= @apartment.address %><br />
+      						   <%= @apartment.city %>, 
+      						   <%= @apartment.state %> 
+      						   <%= @apartment.zip_code %><br />
+      						   <%= @apartment.phone_number %> 
+      						   <br/>
+
+      <strong>URL</strong>  <%= link_to apartment_path(@apartment), @apartment %>
+    </td>
+  </tr>
+  <tr>
+	  <td>
+
+       Location: <%= @apartment.area %> <br/>
+	   Description: <%= @apartment.description %> <br/> 
+      </td>  
+  </tr>
+</table>

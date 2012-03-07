@@ -170,7 +170,7 @@ describe "User pages" do
       before { click_button "Update" }
 
       it { should have_content(error) }
-   end
+    end
 
     describe "with valid information" do
       let(:user)      { FactoryGirl.create(:user) }

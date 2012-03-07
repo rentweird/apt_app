@@ -13,5 +13,16 @@ FactoryGirl.define do
     content "Lorem ipsum"
     user
   end
-end
 
+  factory :apartment do
+    apartment_name     "Michael Hartl"
+    address    "michael@example.com"
+    city     "foobar"
+    state     "TX."
+    zip_code     "12345"
+    phone_number     "(555)555-5555"
+    area     "Example Central"
+    ad_title     "The Title Goes Here"
+    description     "The wonderful description goes here"
+  end
+end
